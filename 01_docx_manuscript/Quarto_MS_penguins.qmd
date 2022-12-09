@@ -4,23 +4,33 @@ format: docx
 editor: visual
 ---
 
-## Quarto
-
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
-
-## Running Code
-
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, tab.topcaption = TRUE, fig.path = "../output/", dev=c('png'))
+library("ggplot2")
+library("dplyr")
+library("knitr")
+library("flextable")
 ```
 
-You can add options to executable code like this
 
-```{r}
-#| echo: false
-2 * 2
-```
+**Abstract**
 
-The `echo: false` option disables the printing of code (only output is displayed).
+The Palmer Archipelago is a group of islands located off the Antarctic Peninsula. It is home to many species of penguins, including Adélie, chinstrap, and gentoo penguins. These penguins are known for their distinctive black and white feathers, as well as their striking red and yellow bills and flippers.
+
+Penguin bills and flippers are important adaptations for life in the cold, harsh environment of the Palmer Archipelago. The bills of penguins are used for hunting, feeding, and social interactions. They are sharp and pointed, allowing the penguins to catch and hold onto their prey. The flippers of penguins are used for swimming and maneuvering through the water. They are long and streamlined, helping the penguins to move quickly and efficiently.
+
+The size and shape of penguin bills and flippers vary among different species and can even vary within a single species. For example, Adélie penguins have a shorter, thicker bill than chinstrap penguins, which have a longer, thinner bill. Gentoo penguins have the longest bill of all penguin species, and they also have the longest flippers.
+
+The bill and flipper dimensions of penguins in the Palmer Archipelago are important for their survival in the cold, harsh environment. The size and shape of these body parts help the penguins to find food, avoid predators, and navigate through the icy waters. In addition, the bill and flipper dimensions of penguins are also used by scientists to study the evolution and ecology of these fascinating animals. 
+
+# Introduction
+
+# Results
+
+# Discussion
+
+# Conclusion
+
+**Acknowledgements**
+
+# References
